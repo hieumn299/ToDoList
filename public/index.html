@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,8 +25,95 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
+    <style type="text/css">
+        .App {
+            text-align: center;
+        }
+        
+        .App-logo {
+            -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+            height: 80px;
+        }
+        
+        .App-header {
+            background-color: #222;
+            height: 150px;
+            padding: 20px;
+            color: white;
+        }
+        
+        .App-title {
+            font-size: 1.5em;
+        }
+        
+        .App-intro {
+            font-size: large;
+        }
+        
+        @-webkit-keyframes App-logo-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes App-logo-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        .mt-15 {
+            margin-top: 15px;
+        }
+        
+        .mr-5 {
+            margin-right: 5px;
+        }
+        
+        .ml-5 {
+            margin-left: 5px;
+        }
+        
+        .pr-5 {
+            padding-right: 5px;
+        }
+        
+        .dropdown-menu .fa:before {
+            padding-right: 10px;
+        }
+        
+        .text-right {
+            float: right;
+            cursor: pointer;
+        }
+        
+        .text-right:hover {
+            color: red;
+        }
+        
+        .sort_selected::after {
+            content: '\F00C';
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px 0px 0px 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +126,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
